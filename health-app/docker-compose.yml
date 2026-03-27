@@ -1,0 +1,95 @@
+version: '3.8'
+
+services:
+  # MongoDB for User Service
+  mongodb:
+    image: mongo:7
+    container_name: healthapp-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - healthapp-network
+
+  # PostgreSQL for Health Data
+  postgres:
+    image: postgres:16
+    container_name: healthapp-postgres
+    environment:
+      POSTGRES_USER: healthapp
+      POSTGRES_PASSWORD: healthpass123
+      POSTGRES_DB: healthdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - healthapp-network
+
+  # Redis for Caching
+  redis:
+    image: redis:7-alpine
+    container_name: healthapp-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - healthapp-network
+
+  # RabbitMQ for Message Queue
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: healthapp-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: healthapp
+      RABBITMQ_DEFAULT_PASS: healthpass123
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - healthapp-network
+
+  # Elasticsearch for Search
+  elasticsearch:
+    image: elasticsearch:8.11.3
+    container_name: healthapp-elasticsearch
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - healthapp-network
+
+  # API Gateway (Nginx)
+  nginx:
+    image: nginx:alpine
+    container_name: healthapp-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./infrastructure/docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - user-service
+    networks:
+      - healthapp-network
+
+networks:
+  healthapp-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
+  postgres_data:
+  redis_data:
+  rabbitmq_data:
+  elasticsearch_data:
