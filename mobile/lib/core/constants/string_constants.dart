@@ -1,0 +1,221 @@
+class StringConstants {
+  // General
+  static const String appName = 'Health & Wellness';
+  static const String appTagline = 'Your Personal Health Companion';
+  static const String welcome = 'Welcome';
+  static const String hello = 'Hello';
+  static const String goodbye = 'Goodbye';
+  static const String yes = 'Yes';
+  static const String no = 'No';
+  static const String ok = 'OK';
+  static const String cancel = 'Cancel';
+  static const String confirm = 'Confirm';
+  static const String delete = 'Delete';
+  static const String edit = 'Edit';
+  static const String save = 'Save';
+  static const String add = 'Add';
+  static const String remove = 'Remove';
+  static const String search = 'Search';
+  static const String filter = 'Filter';
+  static const String sort = 'Sort';
+  static const String loading = 'Loading...';
+  static const String pleaseWait = 'Please wait...';
+  static const String retry = 'Retry';
+  static const String refresh = 'Refresh';
+  static const String done = 'Done';
+  static const String finish = 'Finish';
+  static const String next = 'Next';
+  static const String back = 'Back';
+  static const String skip = 'Skip';
+  
+  // Auth
+  static const String login = 'Login';
+  static const String register = 'Register';
+  static const String logout = 'Logout';
+  static const String signUp = 'Sign Up';
+  static const String signIn = 'Sign In';
+  static const String signOut = 'Sign Out';
+  static const String forgotPassword = 'Forgot Password?';
+  static const String resetPassword = 'Reset Password';
+  static const String changePassword = 'Change Password';
+  static const String email = 'Email';
+  static const String password = 'Password';
+  static const String confirmPassword = 'Confirm Password';
+  static const String username = 'Username';
+  static const String phoneNumber = 'Phone Number';
+  static const String rememberMe = 'Remember Me';
+  static const String dontHaveAccount = "Don't have an account?";
+  static const String alreadyHaveAccount = 'Already have an account?';
+  static const String orContinueWith = 'Or continue with';
+  static const String loginSuccess = 'Login successful!';
+  static const String registerSuccess = 'Registration successful!';
+  static const String logoutSuccess = 'Logged out successfully';
+  static const String invalidCredentials = 'Invalid email or password';
+  static const String weakPassword = 'Password is too weak';
+  static const String passwordMismatch = 'Passwords do not match';
+  static const String emailRequired = 'Email is required';
+  static const String passwordRequired = 'Password is required';
+  static const String invalidEmail = 'Please enter a valid email';
+  
+  // Health
+  static const String health = 'Health';
+  static const String vitals = 'Vitals';
+  static const String heartRate = 'Heart Rate';
+  static const String bloodPressure = 'Blood Pressure';
+  static const String temperature = 'Temperature';
+  static const String oxygenSaturation = 'Oxygen Saturation';
+  static const String glucose = 'Glucose';
+  static const String sleep = 'Sleep';
+  static const String water = 'Water';
+  static const String weight = 'Weight';
+  static const String height = 'Height';
+  static const String bmi = 'BMI';
+  static const String medications = 'Medications';
+  static const String logVital = 'Log Vital';
+  static const String logSleep = 'Log Sleep';
+  static const String logWater = 'Log Water';
+  static const String logWeight = 'Log Weight';
+  static const String viewHistory = 'View History';
+  static const String healthScore = 'Health Score';
+  static const String bpm = 'bpm';
+  static const String mmhg = 'mmHg';
+  static const String celsius = '°C';
+  static const String fahrenheit = '°F';
+  static const String percent = '%';
+  static const String mgdl = 'mg/dL';
+  static const String kg = 'kg';
+  static const String lbs = 'lbs';
+  static const String cm = 'cm';
+  static const String ft = 'ft';
+  static const String liters = 'L';
+  static const String ml = 'mL';
+  static const String glasses = 'glasses';
+  
+  // Nutrition
+  static const String nutrition = 'Nutrition';
+  static const String meals = 'Meals';
+  static const String breakfast = 'Breakfast';
+  static const String lunch = 'Lunch';
+  static const String dinner = 'Dinner';
+  static const String snack = 'Snack';
+  static const String calories = 'Calories';
+  static const String kcal = 'kcal';
+  static const String protein = 'Protein';
+  static const String carbohydrates = 'Carbohydrates';
+  static const String carbs = 'Carbs';
+  static const String fat = 'Fat';
+  static const String fiber = 'Fiber';
+  static const String sugar = 'Sugar';
+  static const String sodium = 'Sodium';
+  static const String logMeal = 'Log Meal';
+  static const String addFood = 'Add Food';
+  static const String scanBarcode = 'Scan Barcode';
+  static const String searchFood = 'Search Food';
+  static const String recipes = 'Recipes';
+  static const String calorieGoal = 'Calorie Goal';
+  static const String remaining = 'Remaining';
+  static const String over = 'Over';
+  
+  // Fitness
+  static const String fitness = 'Fitness';
+  static const String workouts = 'Workouts';
+  static const String exercises = 'Exercises';
+  static const String workoutPlans = 'Workout Plans';
+  static const String startWorkout = 'Start Workout';
+  static const String completeWorkout = 'Complete Workout';
+  static const String duration = 'Duration';
+  static const String distance = 'Distance';
+  static const String steps = 'Steps';
+  static const String activeMinutes = 'Active Minutes';
+  static const String caloriesBurned = 'Calories Burned';
+  static const String challenges = 'Challenges';
+  static const String achievements = 'Achievements';
+  static const String joinChallenge = 'Join Challenge';
+  static const String leaderboard = 'Leaderboard';
+  static const String rank = 'Rank';
+  static const String points = 'Points';
+  
+  // Telehealth
+  static const String telehealth = 'Telehealth';
+  static const String doctors = 'Doctors';
+  static const String appointments = 'Appointments';
+  static const String bookAppointment = 'Book Appointment';
+  static const String cancelAppointment = 'Cancel Appointment';
+  static const String rescheduleAppointment = 'Reschedule Appointment';
+  static const String videoCall = 'Video Call';
+  static const String audioCall = 'Audio Call';
+  static const String chat = 'Chat';
+  static const String prescriptions = 'Prescriptions';
+  static const String medicalRecords = 'Medical Records';
+  static const String specialty = 'Specialty';
+  static const String availability = 'Availability';
+  static const String bookNow = 'Book Now';
+  static const String upcomingAppointments = 'Upcoming Appointments';
+  static const String pastAppointments = 'Past Appointments';
+  static const String noAppointments = 'No appointments scheduled';
+  
+  // Mental Health
+  static const String mentalHealth = 'Mental Health';
+  static const String moodTracker = 'Mood Tracker';
+  static const String howAreYouFeeling = 'How are you feeling?';
+  static const String meditations = 'Meditations';
+  static const String meditation = 'Meditation';
+  static const String breathing = 'Breathing';
+  static const String journal = 'Journal';
+  static const String writeEntry = 'Write Entry';
+  static const String stressLevel = 'Stress Level';
+  static const String anxiety = 'Anxiety';
+  static const String depression = 'Depression';
+  static const String startSession = 'Start Session';
+  static const String guidedMeditation = 'Guided Meditation';
+  static const String breathingExercise = 'Breathing Exercise';
+  
+  // Profile
+  static const String profile = 'Profile';
+  static const String settings = 'Settings';
+  static const String editProfile = 'Edit Profile';
+  static const String personalInfo = 'Personal Info';
+  static const String healthInfo = 'Health Info';
+  static const String preferences = 'Preferences';
+  static const String notifications = 'Notifications';
+  static const String privacy = 'Privacy';
+  static const String security = 'Security';
+  static const String language = 'Language';
+  static const String theme = 'Theme';
+  static const String darkMode = 'Dark Mode';
+  static const String lightMode = 'Light Mode';
+  static const String about = 'About';
+  static const String help = 'Help';
+  static const String faq = 'FAQ';
+  static const String contactUs = 'Contact Us';
+  static const String termsOfService = 'Terms of Service';
+  static const String privacyPolicy = 'Privacy Policy';
+  static const String version = 'Version';
+  
+  // Common Messages
+  static const String noData = 'No data available';
+  static const String noResults = 'No results found';
+  static const String tryAgain = 'Please try again';
+  static const String somethingWentWrong = 'Something went wrong';
+  static const String checkInternet = 'Please check your internet connection';
+  static const String permissionRequired = 'Permission required';
+  static const String permissionDenied = 'Permission denied';
+  static const String featureComingSoon = 'Feature coming soon';
+  static const String areYouSure = 'Are you sure?';
+  static const String thisActionCannotBeUndone = 'This action cannot be undone';
+  
+  // Time
+  static const String today = 'Today';
+  static const String yesterday = 'Yesterday';
+  static const String tomorrow = 'Tomorrow';
+  static const String thisWeek = 'This Week';
+  static const String lastWeek = 'Last Week';
+  static const String thisMonth = 'This Month';
+  static const String lastMonth = 'Last Month';
+  static const String minutes = 'minutes';
+  static const String hours = 'hours';
+  static const String days = 'days';
+  static const String weeks = 'weeks';
+  static const String months = 'months';
+  static const String years = 'years';
+}
