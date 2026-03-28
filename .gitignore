@@ -1,34 +1,36 @@
 ```
 # Build artifacts
-/build/
-/bin/
-/obj/
+build/
+*.apk
+*.aab
+*.ipa
+*.app
 
 # Dependencies
-.pub-cache/
+.pub/
 .dart_tool/
-.packages
+packages/
 
 # Logs
 *.log
+**/logs
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# IDE
-.vscode/
+# IDE files
 .idea/
+.vscode/
 *.swp
 *.swo
 
-# OS
+# OS generated files
 .DS_Store
 Thumbs.db
 
 # Coverage
 coverage/
-htmlcov/
 *.coverage
 ```
